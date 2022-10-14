@@ -17,6 +17,7 @@ function getSumOfDigits(n) {
   while ( n > 9) {
     sum = 0;
     String(n).split('').forEach( item => sum += +item);
+    n = sum;
   }
   return sum;
 }
